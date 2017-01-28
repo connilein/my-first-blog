@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Appreciating Conni's Blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    </body>
+<!--	<head>
+		<title>Appreciating Conni's Blog</title>
+	</head>
+	<body>
+	<h1> MILKSHAKE </h1>
+		<p> YOLO </p>
+	<div>
+	<h2> My milkshake brings all the boys to the yard </h2>
+		<p> Hello World </p>
+	<h2><em>And they're like, it's better than yours</em></h2>
+		<p>Hi there!</p>
+	<h3>Damn right, it's better than your's</h3>
+		<p><a href="http://giphy.com/gifs/breakfast-dennys-diner-3oEduNXFziax14u9Pi">Klick here for a Milkshake Gif</a></div></p>
+	</div>
+	</body> -->
+</html>
